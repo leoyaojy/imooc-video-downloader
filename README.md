@@ -5,8 +5,7 @@
 #### 使用说明
 ----
 ```
-git clone https://github.com/leoyaojy/imooc-video-
-downloader.git
+git clone https://github.com/leoyaojy/imooc-video-downloader.git
 ```
 ```
 cd imooc-video-downloader 
