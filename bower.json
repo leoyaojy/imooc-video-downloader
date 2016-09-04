@@ -1,0 +1,26 @@
+{
+  "name": "imooc-video-downloader",
+  "description": "imooc video downloader",
+  "main": "app.js",
+  "authors": [
+    "leoyaojy"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "imooc",
+    "video",
+    "downloader"
+  ],
+  "homepage": "https://github.com/leoyaojy/imooc-video-downloader#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

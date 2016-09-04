@@ -1,0 +1,47 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        link(href="./libs/bootstrap/dist/css/bootstrap.min.css",rel="stylesheet")
+        link(href="./css/demo.css" rel="stylesheet")
+    body
+        .container
+            h1.text-center 慕课网在线视频解析下载
+            .input-group
+                input.form-control(type="text" id="courseNum",placeholder="请输入课程号")
+                span.input-group-btn
+                    input.btn.btn-success(type="button",id="parse",value="解析")
+            .alert.alert-danger
+                a.close(href="javascript:hideAlert()") &times;
+                span(id="alertInfo") hello
+            table.table.table-striped.table-bordered.table-hover
+                thead
+                    tr
+                        th 章节
+                        th 操作
+                tbody
+            .panel.panel-primary
+                .panel-heading
+                    h3.panel-title 使用说明
+                .panel-body
+                    ol
+                        li 在慕课网中选择需要解析的课程：
+                            a(href="http://www.imooc.com/course/list" target="_blank") http://www.imooc.com/course/list
+                        li 查看浏览器地址栏，网址形如：
+                            code http://www.imooc.com/view/675 或
+                            code http://www.imooc.com/learn/675
+                        li 在当前页面输入框中输入数字
+                            code 675
+                        li 点击解析按钮进行解析
+                        li 点击需要的视频清晰度
+                        li 右键点击
+                            code 下载视频
+                            ，弹出菜单中选择
+                            code 另存为
+                            进行下载
+            #footer.text-center &copy; 2016
+                a(href="http://h5demo.xyz" target='_blank') H5demo.xyz
+        script(src="./libs/jquery/dist/jquery.min.js")
+        script(src="./libs/bootstrap/dist/js/bootstrap.min.js")
+        script(src="./js/demo.js")
