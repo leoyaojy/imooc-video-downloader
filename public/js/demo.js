@@ -39,7 +39,7 @@ function initDom(data) {
         if(data.list[i].type=="video"){
             var btn1 = "<button class='btn btn-success' data-toggle='popover' data-placement='bottom' classId='" + data.list[i].videoId + "' videoDef=" + 0 + ">普清</button>&nbsp;";
             var btn2 = "<button class='btn btn-success' data-toggle='popover' data-placement='bottom' classId='" + data.list[i].videoId + "' videoDef=" + 1 + ">高清</button>&nbsp;";
-            var btn3 = "<button class='btn btn-success' data-toggle='popover' data-placement='bottom' classId='" + data.list[i].videoId + "' videoDef=" + 2 + ">超清</button>";
+            var btn3 = "<button class='btn btn-success' data-toggle='popover' data-placement='bottom' classId='" + data.list[i].videoId + "' videoDef=" + 2 + ">超清</button>&nbsp;";
             trObj = $("<tr><td>" + data.list[i].name + "<span class='label label-success'>视频</span></td><td>" + btn1 + btn2 + btn3 + "</td></tr>");
         }else if(data.list[i].type=="code"){
             var url = "http://www.imooc.com/code/" + data.list[i].videoId;
